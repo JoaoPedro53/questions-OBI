@@ -47,7 +47,7 @@ O valor estará sempre entre <code>0.01</code> e <code>99999.99</code>.
 1234
 1234.56
 1234.56
-0.000000
+0.000059
         </pre>
       </td>
     </tr>
@@ -69,7 +69,7 @@ O valor estará sempre entre <code>0.01</code> e <code>99999.99</code>.
 99999
 99999.99
 99999.99
-0.000000
+0.002187
         </pre>
       </td>
     </tr>
@@ -131,7 +131,7 @@ Três inteiros <code>A</code>, <code>B</code> e <code>C</code>
       <td>
         <pre>
 11
-14
+20
 INTEIRO: 0
 REAL: 0.3750
 POSITIVO
@@ -166,11 +166,11 @@ POSITIVO
       </td>
       <td>
         <pre>
-0
+-12
 -24
 INTEIRO: 1
 REAL: 1.0000
-ZERO
+NEGATIVO
         </pre>
       </td>
     </tr>
