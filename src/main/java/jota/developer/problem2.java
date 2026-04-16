@@ -7,13 +7,13 @@ public class problem2 {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
-        Scanner entry = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        int a = entry.nextInt();
-        entry.nextLine();
-        int b = entry.nextInt();
-        entry.nextLine();
-        int c = entry.nextInt();
+        int a = sc.nextInt();
+        sc.nextLine();
+        int b = sc.nextInt();
+        sc.nextLine();
+        int c = sc.nextInt();
 
         String resultReal = (b == 0) ? "INDEFINIDO" : String.format("%.4f", (double) a / b / c);
         String resultInt = (b == 0) ? "INDEFINIDO" : String.valueOf(a / b / c);

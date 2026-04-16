@@ -7,9 +7,9 @@ public class problem1 {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
-        Scanner entry = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        String valueString = entry.nextLine();
+        String valueString = sc.nextLine();
         double valueDouble = Double.parseDouble(valueString);
         int valueInt = (int) valueDouble;
         float valueFloat = (float) valueDouble;
