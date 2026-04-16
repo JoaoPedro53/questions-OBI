@@ -176,3 +176,110 @@ NEGATIVO
     </tr>
   </tbody>
 </table>
+
+<h2>3. 🧩 O Classificador de Tipos</h2>
+
+<p>
+Um sistema de diagnóstico recebe <strong>N valores</strong> e precisa classificá-los dinamicamente:
+determinar se cada um é <strong>inteiro</strong>, <strong>real</strong> ou <strong>booleano</strong> em Python — 
+e comparar com o comportamento estático de Java, onde o tipo é fixo em compilação.
+</p>
+
+<p>
+Isso expõe a diferença entre <strong>tipagem dinâmica</strong> e <strong>tipagem estática</strong>.
+</p>
+
+<h3>📥 Entrada</h3>
+<p>
+Primeira linha: inteiro <code>N</code> (<code>1 ≤ N ≤ 10</code>) — número de valores.<br>
+As <code>N</code> linhas seguintes: cada uma contém uma <code>string</code> representando um valor:
+</p>
+
+<ul>
+  <li>Inteiro (ex.: <code>42</code>)</li>
+  <li>Decimal com ponto (ex.: <code>3.14</code>)</li>
+  <li>Booleano (<code>True</code> ou <code>False</code>)</li>
+</ul>
+
+<h3>📤 Saída (Python)</h3>
+<p>Para cada valor:</p>
+
+<ul>
+  <li>Exibir o tipo detectado: <code>int</code>, <code>float</code> ou <code>bool</code></li>
+  <li>Exibir o valor convertido</li>
+  <li>Se for <code>bool</code>, exibir também o inteiro equivalente</li>
+</ul>
+
+<p>
+Após os <code>N</code> valores, exibir a <strong>SOMA</strong> de todos os valores numéricos 
+(<code>int + float</code>) com <strong>2 casas decimais</strong>.
+</p>
+
+<h3>⚠️ Observação</h3>
+<p>
+Teste <code>'True'</code> / <code>'False'</code> <strong>ANTES</strong> de testar <code>int</code> ou <code>float</code>.
+</p>
+
+<p>
+Em Python, <code>bool</code> é subclasse de <code>int</code>:
+</p>
+
+<pre>
+isinstance(True, int)  # True
+</pre>
+
+<h3>📌 Exemplo</h3>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Entrada</th>
+      <th>Saída Esperada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre>
+4
+42
+3.14
+True
+7
+        </pre>
+      </td>
+      <td>
+        <pre>
+int: 42
+float: 3.14
+bool: True (int=1)
+int: 7
+SOMA: 52.14
+        </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>🛠️ Exigências de Construção</h3>
+
+<p><strong>Python:</strong></p>
+<ul>
+  <li>Usar <code>isinstance()</code> na ordem: <code>bool</code>, <code>int</code>, <code>float</code></li>
+  <li>Usar <code>try/except</code> para conversões (bool → int → float)</li>
+  <li>Usar lista para acumular valores</li>
+  <li>Calcular soma com <code>sum()</code> ou <code>+=</code></li>
+</ul>
+
+<p><strong>Java:</strong></p>
+<ul>
+  <li>Implementar equivalente usando <code>double</code></li>
+  <li>Comentar onde Java não determina tipo dinamicamente</li>
+</ul>
+
+<h3>📚 Conceitos Envolvidos</h3>
+<ul>
+  <li><strong>Cap. 6:</strong> Tipagem dinâmica vs estática, coerção <code>bool → int</code> em Python</li>
+  <li><strong>Cap. 7:</strong> Uso do operador <code>+=</code></li>
+</ul>
+
